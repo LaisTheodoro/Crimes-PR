@@ -1,26 +1,35 @@
-# Crimes-PR — WebGIS
+# Crimes-PR — WebGIS demonstrativo
 
-Aplicação estática para GitHub Pages. O frontend fica em `index.html` (HTML, CSS e JavaScript em um único arquivo), sem Node.js ou backend.
+Aplicação web estática para visualização exploratória de registros sintéticos. O frontend está em `index.html` e usa Leaflet para o mapa e Chart.js para gráficos. Não exige backend; precisa de conexão à internet para carregar as bibliotecas e os mapas-base por CDN.
 
-> **Dados de demonstração:** `data/estatisticas_sesp.json` contém registros sintéticos. Não são estatísticas oficiais da SESP-PR. `data/bairros.geojson` é um modelo vazio; substitua-o por polígonos válidos autorizados para habilitar o coroplético.
+> **Importante:** `data/estatisticas_sesp.json` contém 72 registros sintéticos criados para testar a interface. Não são dados oficiais da SESP-PR e não devem embasar análises, decisões operacionais ou publicações estatísticas. `data/bairros.geojson` é apenas um modelo vazio.
 
-## Publicação pelo GitHub Pages
-1. Envie `index.html`, a pasta `data/` e este README para a raiz da branch `main`.
-2. No GitHub, abra **Settings → Pages**.
-3. Em **Build and deployment**, escolha **Deploy from a branch**, branch `main`, pasta `/ (root)`, e salve.
-4. Aguarde a publicação e abra o endereço fornecido pelo GitHub Pages.
+## Publicar no GitHub Pages
 
-A aplicação carrega bibliotecas e mapas externos via CDN; é necessária conexão com a internet. Para testar localmente, use um servidor HTTP, não abra o HTML via `file://`.
+1. Abra **Settings → Pages** neste repositório.
+2. Em **Build and deployment**, selecione **Deploy from a branch**.
+3. Escolha a branch `main` e a pasta `/(root)`; clique em **Save**.
+4. Aguarde o workflow de publicação concluir e abra o endereço mostrado na página Pages.
 
-## Dados tabulares
-Atualize `data/estatisticas_sesp.json` preservando uma estrutura como:
+Se a opção Pages não aparecer, verifique se você está nas configurações do repositório correto e se possui permissão de administrador. O conector usado nesta sessão consegue enviar arquivos e commits, mas não expõe uma ação para alterar a configuração de Pages; por isso, essa etapa pode exigir um clique manual.
+
+## Arquivos
+
+- `index.html`: interface responsiva, filtros por município/ano/mês/tipo, mapa interativo com pontos, gráficos, tabela resumo, exportação CSV e carregamento de arquivo JSON/GeoJSON para teste na sessão.
+- `data/estatisticas_sesp.json`: exemplo sintético, com campos de data, município, bairro, tipo, hora e coordenadas.
+- `data/bairros.geojson`: modelo vazio de FeatureCollection para futura inclusão de polígonos autorizados.
+- `README.md`: documentação.
+
+## Estrutura de dados
+
+O JSON usa a estrutura:
 
 ```json
 {
-  "fonte": "SESP-PR — base/relatório e referência",
-  "demonstracao": false,
-  "atualizado_em": "2026-10-31",
-  "populacao_por_municipio": {"Curitiba": 1773718},
+  "fonte": "Descrição da fonte",
+  "demonstracao": true,
+  "atualizado_em": "AAAA-MM-DD",
+  "populacao_por_municipio": {},
   "ocorrencias": [{
     "id": "identificador não pessoal",
     "data": "2026-01-15",
@@ -34,23 +43,12 @@ Atualize `data/estatisticas_sesp.json` preservando uma estrutura como:
 }
 ```
 
-Campos reconhecidos incluem `data`/`date`, `municipio`/`city`, `bairro`/`neighborhood`, `tipo`/`type`, `hora`/`hour`, `latitude`/`lat` e `longitude`/`lng`. Data recomendada: `AAAA-MM-DD`; hora: inteiro entre 0 e 23; coordenadas: WGS84/EPSG:4326.
+Datas no formato `AAAA-MM-DD`; coordenadas em WGS84/EPSG:4326. Os nomes dos campos podem usar os aliases presentes no código (`date`, `city`, `neighborhood`, `type`, `lat`, `lng`).
 
-A taxa por 100 mil habitantes só aparece quando houver população de referência para o município selecionado. Documente o ano e a fonte da população. A variação anual compara os dois anos selecionados com os demais filtros aplicados.
+## Segurança e qualidade
 
-## Limites geográficos
-Substitua `data/bairros.geojson` por um `FeatureCollection` GeoJSON em WGS84 (EPSG:4326). Inclua o nome do bairro em `bairro`, `nome_bairro`, `nome`, `name` ou `NM_BAIRRO`. A vinculação com a tabela é feita pelo nome, portanto padronize grafia e acentuação. Dados agregados por bairro não devem ser convertidos em pontos artificiais.
-
-## Funcionalidades
-- Filtros por município, ano, ano de comparação, mês, tipo e turno.
-- Mapa de pontos, mapa de calor e coroplético (quando há polígonos).
-- Camadas base clara, OpenStreetMap, escura e satélite.
-- Indicadores, ranking, gráficos, comparação de bairros.
-- Exportação CSV e tentativa de exportação PNG.
-- Carregamento de JSON/GeoJSON local para a sessão de teste.
-
-## Cuidados
-- O GitHub Pages publica os arquivos de forma pública; confirme autorização institucional antes de publicar dados da SESP-PR.
-- Não publique nomes, documentos, endereços residenciais, identificadores pessoais ou informações protegidas.
-- Valide duplicidades, coordenadas, datas, nomenclaturas, conceitos e limitações metodológicas.
-- A exportação PNG pode falhar se o provedor de mapas bloquear captura por CORS.
+- O GitHub Pages publica o conteúdo de forma acessível pela web. Confirme autorização institucional antes de disponibilizar qualquer dado real.
+- Não publique nomes, documentos, endereços residenciais, identificadores pessoais ou informação protegida.
+- Documente fonte, período, conceitos, cobertura, regras de deduplicação e limitações.
+- O mapa não geocodifica endereços nem infere coordenadas; exibe apenas coordenadas presentes no arquivo.
+- O carregamento de arquivos pelo botão é temporário e vale somente para a sessão atual.
