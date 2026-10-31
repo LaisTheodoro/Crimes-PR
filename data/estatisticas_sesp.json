@@ -1,0 +1,728 @@
+{
+  "fonte": "Dados sintéticos para demonstração — não são estatísticas oficiais da SESP-PR",
+  "demonstracao": true,
+  "atualizado_em": "2026-10-31",
+  "populacao_por_municipio": {},
+  "ocorrencias": [
+    {
+      "id": "DEMO-001",
+      "data": "2020-01-01",
+      "municipio": "Curitiba",
+      "bairro": "Centro",
+      "tipo": "Furto",
+      "hora": 0,
+      "latitude": -25.4348,
+      "longitude": -49.2769
+    },
+    {
+      "id": "DEMO-002",
+      "data": "2021-02-08",
+      "municipio": "Curitiba",
+      "bairro": "Santa Felicidade",
+      "tipo": "Tráfico de drogas",
+      "hora": 7,
+      "latitude": -25.3964,
+      "longitude": -49.3376
+    },
+    {
+      "id": "DEMO-003",
+      "data": "2022-03-15",
+      "municipio": "Curitiba",
+      "bairro": "Boqueirão",
+      "tipo": "Violência doméstica",
+      "hora": 14,
+      "latitude": -25.487,
+      "longitude": -49.2383
+    },
+    {
+      "id": "DEMO-004",
+      "data": "2023-04-22",
+      "municipio": "Curitiba",
+      "bairro": "Rebouças",
+      "tipo": "Homicídio doloso",
+      "hora": 21,
+      "latitude": -25.4386,
+      "longitude": -49.26
+    },
+    {
+      "id": "DEMO-005",
+      "data": "2024-05-02",
+      "municipio": "Curitiba",
+      "bairro": "Cajuru",
+      "tipo": "Homicídio doloso",
+      "hora": 4,
+      "latitude": -25.4422,
+      "longitude": -49.2137
+    },
+    {
+      "id": "DEMO-006",
+      "data": "2025-06-09",
+      "municipio": "Curitiba",
+      "bairro": "Centro",
+      "tipo": "Lesão corporal",
+      "hora": 11,
+      "latitude": -25.4348,
+      "longitude": -49.2704
+    },
+    {
+      "id": "DEMO-007",
+      "data": "2026-07-16",
+      "municipio": "Curitiba",
+      "bairro": "Batel",
+      "tipo": "Roubo",
+      "hora": 18,
+      "latitude": -25.4414,
+      "longitude": -49.2831
+    },
+    {
+      "id": "DEMO-008",
+      "data": "2020-08-23",
+      "municipio": "Curitiba",
+      "bairro": "CIC",
+      "tipo": "Furto",
+      "hora": 1,
+      "latitude": -25.49,
+      "longitude": -49.3539
+    },
+    {
+      "id": "DEMO-009",
+      "data": "2021-09-03",
+      "municipio": "Curitiba",
+      "bairro": "Rebouças",
+      "tipo": "Furto",
+      "hora": 8,
+      "latitude": -25.4386,
+      "longitude": -49.2626
+    },
+    {
+      "id": "DEMO-010",
+      "data": "2022-10-10",
+      "municipio": "Curitiba",
+      "bairro": "Boa Vista",
+      "tipo": "Tráfico de drogas",
+      "hora": 15,
+      "latitude": -25.3892,
+      "longitude": -49.2413
+    },
+    {
+      "id": "DEMO-011",
+      "data": "2023-11-17",
+      "municipio": "Curitiba",
+      "bairro": "Água Verde",
+      "tipo": "Violência doméstica",
+      "hora": 22,
+      "latitude": -25.4548,
+      "longitude": -49.286
+    },
+    {
+      "id": "DEMO-012",
+      "data": "2024-12-24",
+      "municipio": "Curitiba",
+      "bairro": "Batel",
+      "tipo": "Homicídio doloso",
+      "hora": 5,
+      "latitude": -25.4414,
+      "longitude": -49.2857
+    },
+    {
+      "id": "DEMO-013",
+      "data": "2025-01-04",
+      "municipio": "Curitiba",
+      "bairro": "Portão",
+      "tipo": "Homicídio doloso",
+      "hora": 12,
+      "latitude": -25.475,
+      "longitude": -49.2924
+    },
+    {
+      "id": "DEMO-014",
+      "data": "2026-02-11",
+      "municipio": "Curitiba",
+      "bairro": "Juvevê",
+      "tipo": "Lesão corporal",
+      "hora": 19,
+      "latitude": -25.4086,
+      "longitude": -49.2561
+    },
+    {
+      "id": "DEMO-015",
+      "data": "2020-03-18",
+      "municipio": "Curitiba",
+      "bairro": "Boa Vista",
+      "tipo": "Roubo",
+      "hora": 2,
+      "latitude": -25.3892,
+      "longitude": -49.2439
+    },
+    {
+      "id": "DEMO-016",
+      "data": "2021-04-25",
+      "municipio": "Curitiba",
+      "bairro": "Boqueirão",
+      "tipo": "Furto",
+      "hora": 9,
+      "latitude": -25.4898,
+      "longitude": -49.2396
+    },
+    {
+      "id": "DEMO-017",
+      "data": "2022-05-05",
+      "municipio": "Curitiba",
+      "bairro": "Sítio Cercado",
+      "tipo": "Furto",
+      "hora": 16,
+      "latitude": -25.5364,
+      "longitude": -49.2613
+    },
+    {
+      "id": "DEMO-018",
+      "data": "2023-06-12",
+      "municipio": "Curitiba",
+      "bairro": "Portão",
+      "tipo": "Tráfico de drogas",
+      "hora": 23,
+      "latitude": -25.475,
+      "longitude": -49.295
+    },
+    {
+      "id": "DEMO-019",
+      "data": "2024-07-19",
+      "municipio": "Curitiba",
+      "bairro": "Centro",
+      "tipo": "Violência doméstica",
+      "hora": 6,
+      "latitude": -25.4306,
+      "longitude": -49.2717
+    },
+    {
+      "id": "DEMO-020",
+      "data": "2025-08-26",
+      "municipio": "Curitiba",
+      "bairro": "Santa Felicidade",
+      "tipo": "Homicídio doloso",
+      "hora": 13,
+      "latitude": -25.3922,
+      "longitude": -49.3324
+    },
+    {
+      "id": "DEMO-021",
+      "data": "2026-09-06",
+      "municipio": "Curitiba",
+      "bairro": "Boqueirão",
+      "tipo": "Homicídio doloso",
+      "hora": 20,
+      "latitude": -25.4898,
+      "longitude": -49.2331
+    },
+    {
+      "id": "DEMO-022",
+      "data": "2020-10-13",
+      "municipio": "Curitiba",
+      "bairro": "Rebouças",
+      "tipo": "Lesão corporal",
+      "hora": 3,
+      "latitude": -25.4414,
+      "longitude": -49.2639
+    },
+    {
+      "id": "DEMO-023",
+      "data": "2021-11-20",
+      "municipio": "Curitiba",
+      "bairro": "Cajuru",
+      "tipo": "Roubo",
+      "hora": 10,
+      "latitude": -25.445,
+      "longitude": -49.2176
+    },
+    {
+      "id": "DEMO-024",
+      "data": "2022-12-27",
+      "municipio": "Curitiba",
+      "bairro": "Centro",
+      "tipo": "Furto",
+      "hora": 17,
+      "latitude": -25.4306,
+      "longitude": -49.2743
+    },
+    {
+      "id": "DEMO-025",
+      "data": "2023-01-07",
+      "municipio": "Curitiba",
+      "bairro": "Batel",
+      "tipo": "Furto",
+      "hora": 0,
+      "latitude": -25.4372,
+      "longitude": -49.287
+    },
+    {
+      "id": "DEMO-026",
+      "data": "2024-02-14",
+      "municipio": "Curitiba",
+      "bairro": "CIC",
+      "tipo": "Tráfico de drogas",
+      "hora": 7,
+      "latitude": -25.4928,
+      "longitude": -49.3487
+    },
+    {
+      "id": "DEMO-027",
+      "data": "2025-03-21",
+      "municipio": "Curitiba",
+      "bairro": "Rebouças",
+      "tipo": "Violência doméstica",
+      "hora": 14,
+      "latitude": -25.4414,
+      "longitude": -49.2574
+    },
+    {
+      "id": "DEMO-028",
+      "data": "2026-04-01",
+      "municipio": "Curitiba",
+      "bairro": "Boa Vista",
+      "tipo": "Homicídio doloso",
+      "hora": 21,
+      "latitude": -25.392,
+      "longitude": -49.2361
+    },
+    {
+      "id": "DEMO-029",
+      "data": "2020-05-08",
+      "municipio": "Curitiba",
+      "bairro": "Água Verde",
+      "tipo": "Homicídio doloso",
+      "hora": 4,
+      "latitude": -25.4506,
+      "longitude": -49.2899
+    },
+    {
+      "id": "DEMO-030",
+      "data": "2021-06-15",
+      "municipio": "Curitiba",
+      "bairro": "Batel",
+      "tipo": "Lesão corporal",
+      "hora": 11,
+      "latitude": -25.4372,
+      "longitude": -49.2896
+    },
+    {
+      "id": "DEMO-031",
+      "data": "2022-07-22",
+      "municipio": "Curitiba",
+      "bairro": "Portão",
+      "tipo": "Roubo",
+      "hora": 18,
+      "latitude": -25.4778,
+      "longitude": -49.2963
+    },
+    {
+      "id": "DEMO-032",
+      "data": "2023-08-02",
+      "municipio": "Curitiba",
+      "bairro": "Juvevê",
+      "tipo": "Furto",
+      "hora": 1,
+      "latitude": -25.4114,
+      "longitude": -49.26
+    },
+    {
+      "id": "DEMO-033",
+      "data": "2024-09-09",
+      "municipio": "Curitiba",
+      "bairro": "Boa Vista",
+      "tipo": "Furto",
+      "hora": 8,
+      "latitude": -25.392,
+      "longitude": -49.2387
+    },
+    {
+      "id": "DEMO-034",
+      "data": "2025-10-16",
+      "municipio": "Curitiba",
+      "bairro": "Boqueirão",
+      "tipo": "Tráfico de drogas",
+      "hora": 15,
+      "latitude": -25.4856,
+      "longitude": -49.2344
+    },
+    {
+      "id": "DEMO-035",
+      "data": "2026-11-23",
+      "municipio": "Curitiba",
+      "bairro": "Sítio Cercado",
+      "tipo": "Violência doméstica",
+      "hora": 22,
+      "latitude": -25.5322,
+      "longitude": -49.2561
+    },
+    {
+      "id": "DEMO-036",
+      "data": "2020-12-03",
+      "municipio": "Curitiba",
+      "bairro": "Portão",
+      "tipo": "Homicídio doloso",
+      "hora": 5,
+      "latitude": -25.4778,
+      "longitude": -49.2989
+    },
+    {
+      "id": "DEMO-037",
+      "data": "2021-01-10",
+      "municipio": "Curitiba",
+      "bairro": "Centro",
+      "tipo": "Homicídio doloso",
+      "hora": 12,
+      "latitude": -25.4334,
+      "longitude": -49.2756
+    },
+    {
+      "id": "DEMO-038",
+      "data": "2022-02-17",
+      "municipio": "Curitiba",
+      "bairro": "Santa Felicidade",
+      "tipo": "Lesão corporal",
+      "hora": 19,
+      "latitude": -25.395,
+      "longitude": -49.3363
+    },
+    {
+      "id": "DEMO-039",
+      "data": "2023-03-24",
+      "municipio": "Curitiba",
+      "bairro": "Boqueirão",
+      "tipo": "Roubo",
+      "hora": 2,
+      "latitude": -25.4856,
+      "longitude": -49.237
+    },
+    {
+      "id": "DEMO-040",
+      "data": "2024-04-04",
+      "municipio": "Curitiba",
+      "bairro": "Rebouças",
+      "tipo": "Furto",
+      "hora": 9,
+      "latitude": -25.4372,
+      "longitude": -49.2587
+    },
+    {
+      "id": "DEMO-041",
+      "data": "2025-05-11",
+      "municipio": "Curitiba",
+      "bairro": "Cajuru",
+      "tipo": "Furto",
+      "hora": 16,
+      "latitude": -25.4478,
+      "longitude": -49.2124
+    },
+    {
+      "id": "DEMO-042",
+      "data": "2026-06-18",
+      "municipio": "Curitiba",
+      "bairro": "Centro",
+      "tipo": "Tráfico de drogas",
+      "hora": 23,
+      "latitude": -25.4334,
+      "longitude": -49.2691
+    },
+    {
+      "id": "DEMO-043",
+      "data": "2020-07-25",
+      "municipio": "Curitiba",
+      "bairro": "Batel",
+      "tipo": "Violência doméstica",
+      "hora": 6,
+      "latitude": -25.44,
+      "longitude": -49.2909
+    },
+    {
+      "id": "DEMO-044",
+      "data": "2021-08-05",
+      "municipio": "Curitiba",
+      "bairro": "CIC",
+      "tipo": "Homicídio doloso",
+      "hora": 13,
+      "latitude": -25.4886,
+      "longitude": -49.3526
+    },
+    {
+      "id": "DEMO-045",
+      "data": "2022-09-12",
+      "municipio": "Curitiba",
+      "bairro": "Rebouças",
+      "tipo": "Homicídio doloso",
+      "hora": 20,
+      "latitude": -25.4372,
+      "longitude": -49.2613
+    },
+    {
+      "id": "DEMO-046",
+      "data": "2023-10-19",
+      "municipio": "Curitiba",
+      "bairro": "Boa Vista",
+      "tipo": "Lesão corporal",
+      "hora": 3,
+      "latitude": -25.3948,
+      "longitude": -49.24
+    },
+    {
+      "id": "DEMO-047",
+      "data": "2024-11-26",
+      "municipio": "Curitiba",
+      "bairro": "Água Verde",
+      "tipo": "Roubo",
+      "hora": 10,
+      "latitude": -25.4534,
+      "longitude": -49.2847
+    },
+    {
+      "id": "DEMO-048",
+      "data": "2025-12-06",
+      "municipio": "Curitiba",
+      "bairro": "Batel",
+      "tipo": "Furto",
+      "hora": 17,
+      "latitude": -25.44,
+      "longitude": -49.2844
+    },
+    {
+      "id": "DEMO-049",
+      "data": "2026-01-13",
+      "municipio": "Curitiba",
+      "bairro": "Portão",
+      "tipo": "Furto",
+      "hora": 0,
+      "latitude": -25.4736,
+      "longitude": -49.2911
+    },
+    {
+      "id": "DEMO-050",
+      "data": "2020-02-20",
+      "municipio": "Curitiba",
+      "bairro": "Juvevê",
+      "tipo": "Tráfico de drogas",
+      "hora": 7,
+      "latitude": -25.4072,
+      "longitude": -49.2639
+    },
+    {
+      "id": "DEMO-051",
+      "data": "2021-03-27",
+      "municipio": "Curitiba",
+      "bairro": "Boa Vista",
+      "tipo": "Violência doméstica",
+      "hora": 14,
+      "latitude": -25.3948,
+      "longitude": -49.2426
+    },
+    {
+      "id": "DEMO-052",
+      "data": "2022-04-07",
+      "municipio": "Curitiba",
+      "bairro": "Boqueirão",
+      "tipo": "Homicídio doloso",
+      "hora": 21,
+      "latitude": -25.4884,
+      "longitude": -49.2383
+    },
+    {
+      "id": "DEMO-053",
+      "data": "2023-05-14",
+      "municipio": "Curitiba",
+      "bairro": "Sítio Cercado",
+      "tipo": "Homicídio doloso",
+      "hora": 4,
+      "latitude": -25.535,
+      "longitude": -49.26
+    },
+    {
+      "id": "DEMO-054",
+      "data": "2024-06-21",
+      "municipio": "Curitiba",
+      "bairro": "Portão",
+      "tipo": "Lesão corporal",
+      "hora": 11,
+      "latitude": -25.4736,
+      "longitude": -49.2937
+    },
+    {
+      "id": "DEMO-055",
+      "data": "2025-07-01",
+      "municipio": "Curitiba",
+      "bairro": "Centro",
+      "tipo": "Roubo",
+      "hora": 18,
+      "latitude": -25.4292,
+      "longitude": -49.2704
+    },
+    {
+      "id": "DEMO-056",
+      "data": "2026-08-08",
+      "municipio": "Curitiba",
+      "bairro": "Santa Felicidade",
+      "tipo": "Furto",
+      "hora": 1,
+      "latitude": -25.3978,
+      "longitude": -49.3311
+    },
+    {
+      "id": "DEMO-057",
+      "data": "2020-09-15",
+      "municipio": "Curitiba",
+      "bairro": "Boqueirão",
+      "tipo": "Furto",
+      "hora": 8,
+      "latitude": -25.4884,
+      "longitude": -49.2409
+    },
+    {
+      "id": "DEMO-058",
+      "data": "2021-10-22",
+      "municipio": "Curitiba",
+      "bairro": "Rebouças",
+      "tipo": "Tráfico de drogas",
+      "hora": 15,
+      "latitude": -25.44,
+      "longitude": -49.2626
+    },
+    {
+      "id": "DEMO-059",
+      "data": "2022-11-02",
+      "municipio": "Curitiba",
+      "bairro": "Cajuru",
+      "tipo": "Violência doméstica",
+      "hora": 22,
+      "latitude": -25.4436,
+      "longitude": -49.2163
+    },
+    {
+      "id": "DEMO-060",
+      "data": "2023-12-09",
+      "municipio": "Curitiba",
+      "bairro": "Centro",
+      "tipo": "Homicídio doloso",
+      "hora": 5,
+      "latitude": -25.4292,
+      "longitude": -49.273
+    },
+    {
+      "id": "DEMO-061",
+      "data": "2024-01-16",
+      "municipio": "Curitiba",
+      "bairro": "Batel",
+      "tipo": "Homicídio doloso",
+      "hora": 12,
+      "latitude": -25.4428,
+      "longitude": -49.2857
+    },
+    {
+      "id": "DEMO-062",
+      "data": "2025-02-23",
+      "municipio": "Curitiba",
+      "bairro": "CIC",
+      "tipo": "Lesão corporal",
+      "hora": 19,
+      "latitude": -25.4914,
+      "longitude": -49.3474
+    },
+    {
+      "id": "DEMO-063",
+      "data": "2026-03-03",
+      "municipio": "Curitiba",
+      "bairro": "Rebouças",
+      "tipo": "Roubo",
+      "hora": 2,
+      "latitude": -25.44,
+      "longitude": -49.2561
+    },
+    {
+      "id": "DEMO-064",
+      "data": "2020-04-10",
+      "municipio": "Curitiba",
+      "bairro": "Boa Vista",
+      "tipo": "Furto",
+      "hora": 9,
+      "latitude": -25.3906,
+      "longitude": -49.2439
+    },
+    {
+      "id": "DEMO-065",
+      "data": "2021-05-17",
+      "municipio": "Curitiba",
+      "bairro": "Água Verde",
+      "tipo": "Furto",
+      "hora": 16,
+      "latitude": -25.4492,
+      "longitude": -49.2886
+    },
+    {
+      "id": "DEMO-066",
+      "data": "2022-06-24",
+      "municipio": "Curitiba",
+      "bairro": "Batel",
+      "tipo": "Tráfico de drogas",
+      "hora": 23,
+      "latitude": -25.4428,
+      "longitude": -49.2883
+    },
+    {
+      "id": "DEMO-067",
+      "data": "2023-07-04",
+      "municipio": "Curitiba",
+      "bairro": "Portão",
+      "tipo": "Violência doméstica",
+      "hora": 6,
+      "latitude": -25.4764,
+      "longitude": -49.295
+    },
+    {
+      "id": "DEMO-068",
+      "data": "2024-08-11",
+      "municipio": "Curitiba",
+      "bairro": "Juvevê",
+      "tipo": "Homicídio doloso",
+      "hora": 13,
+      "latitude": -25.41,
+      "longitude": -49.2587
+    },
+    {
+      "id": "DEMO-069",
+      "data": "2025-09-18",
+      "municipio": "Curitiba",
+      "bairro": "Boa Vista",
+      "tipo": "Homicídio doloso",
+      "hora": 20,
+      "latitude": -25.3906,
+      "longitude": -49.2374
+    },
+    {
+      "id": "DEMO-070",
+      "data": "2026-10-25",
+      "municipio": "Curitiba",
+      "bairro": "Boqueirão",
+      "tipo": "Lesão corporal",
+      "hora": 3,
+      "latitude": -25.4842,
+      "longitude": -49.2331
+    },
+    {
+      "id": "DEMO-071",
+      "data": "2020-11-05",
+      "municipio": "Curitiba",
+      "bairro": "Sítio Cercado",
+      "tipo": "Roubo",
+      "hora": 10,
+      "latitude": -25.5378,
+      "longitude": -49.2639
+    },
+    {
+      "id": "DEMO-072",
+      "data": "2021-12-12",
+      "municipio": "Curitiba",
+      "bairro": "Portão",
+      "tipo": "Furto",
+      "hora": 17,
+      "latitude": -25.4764,
+      "longitude": -49.2976
+    }
+  ]
+}
