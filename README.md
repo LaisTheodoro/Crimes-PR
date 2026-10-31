@@ -1,35 +1,46 @@
 # Crimes-PR — WebGIS demonstrativo
 
-Aplicação web estática para visualização exploratória de registros sintéticos. O frontend está em `index.html` e usa Leaflet para o mapa e Chart.js para gráficos. Não exige backend; precisa de conexão à internet para carregar as bibliotecas e os mapas-base por CDN.
+Aplicação web estática para visualização exploratória de registros **sintéticos**. Não exige backend; Leaflet, Chart.js e mapas-base são carregados por CDN e requerem conexão à internet.
 
-> **Importante:** `data/estatisticas_sesp.json` contém 72 registros sintéticos criados para testar a interface. Não são dados oficiais da SESP-PR e não devem embasar análises, decisões operacionais ou publicações estatísticas. `data/bairros.geojson` é apenas um modelo vazio.
+> **Importante:** `data/estatisticas_sesp.json` contém registros sintéticos para testar a interface. Não são dados oficiais da SESP-PR e não devem embasar análises, decisões operacionais ou publicações estatísticas. `data/bairros.geojson` é apenas um modelo vazio.
 
-## Publicar no GitHub Pages
+## Publicação automática com GitHub Actions
+
+O workflow `.github/workflows/pages.yml` valida os arquivos e publica o site no GitHub Pages a cada push para `main`, além de permitir execução manual.
+
+### Configuração inicial (uma única vez)
 
 1. Abra **Settings → Pages** neste repositório.
-2. Em **Build and deployment**, selecione **Deploy from a branch**.
-3. Escolha a branch `main` e a pasta `/(root)`; clique em **Save**.
-4. Aguarde o workflow de publicação concluir e abra o endereço mostrado na página Pages.
+2. Em **Build and deployment → Source**, selecione **GitHub Actions** (não “Deploy from a branch”).
+3. Abra a aba **Actions** e acompanhe **Deploy Crimes-PR to GitHub Pages**.
+4. Quando a execução terminar com sucesso, abra o endereço publicado no ambiente `github-pages` ou em **Settings → Pages**.
 
-Se a opção Pages não aparecer, verifique se você está nas configurações do repositório correto e se possui permissão de administrador. O conector usado nesta sessão consegue enviar arquivos e commits, mas não expõe uma ação para alterar a configuração de Pages; por isso, essa etapa pode exigir um clique manual.
+Endereço esperado: https://laistheodoro.github.io/Crimes-PR/.
+
+### Diagnóstico
+
+- **Build falhou:** abra a execução em Actions e consulte a etapa vermelha.
+- **Deploy falhou por permissões:** confirme que Pages está configurado como **GitHub Actions** e que o workflow tem `pages: write` e `id-token: write`.
+- **404 logo após publicar:** aguarde alguns minutos e use o endereço exibido em Settings → Pages; confirme que o job Deploy terminou com sucesso.
+- O workflow verifica a presença de `index.html` e do JSON de demonstração e valida a sintaxe do JSON.
 
 ## Arquivos
 
-- `index.html`: interface responsiva, filtros por município/ano/mês/tipo, mapa interativo com pontos, gráficos, tabela resumo, exportação CSV e carregamento de arquivo JSON/GeoJSON para teste na sessão.
-- `data/estatisticas_sesp.json`: exemplo sintético, com campos de data, município, bairro, tipo, hora e coordenadas.
-- `data/bairros.geojson`: modelo vazio de FeatureCollection para futura inclusão de polígonos autorizados.
+- `index.html`: interface responsiva, filtros por município/ano/mês/tipo, mapa, gráficos, tabela-resumo, exportação CSV e carregamento temporário de JSON/GeoJSON.
+- `data/estatisticas_sesp.json`: dados de exemplo sintéticos.
+- `data/bairros.geojson`: modelo vazio de FeatureCollection.
+- `.github/workflows/pages.yml`: validação e publicação automática.
 - `README.md`: documentação.
 
 ## Estrutura de dados
 
-O JSON usa a estrutura:
+O JSON pode conter metadados e uma lista `ocorrencias`:
 
 ```json
 {
   "fonte": "Descrição da fonte",
   "demonstracao": true,
   "atualizado_em": "AAAA-MM-DD",
-  "populacao_por_municipio": {},
   "ocorrencias": [{
     "id": "identificador não pessoal",
     "data": "2026-01-15",
@@ -43,12 +54,12 @@ O JSON usa a estrutura:
 }
 ```
 
-Datas no formato `AAAA-MM-DD`; coordenadas em WGS84/EPSG:4326. Os nomes dos campos podem usar os aliases presentes no código (`date`, `city`, `neighborhood`, `type`, `lat`, `lng`).
+Datas em `AAAA-MM-DD`; coordenadas em WGS84/EPSG:4326. O frontend também reconhece aliases como `date`, `city`, `neighborhood`, `type`, `lat` e `lng`.
 
 ## Segurança e qualidade
 
-- O GitHub Pages publica o conteúdo de forma acessível pela web. Confirme autorização institucional antes de disponibilizar qualquer dado real.
+- O GitHub Pages publica conteúdo acessível pela web. Confirme autorização institucional antes de disponibilizar dados reais.
 - Não publique nomes, documentos, endereços residenciais, identificadores pessoais ou informação protegida.
 - Documente fonte, período, conceitos, cobertura, regras de deduplicação e limitações.
-- O mapa não geocodifica endereços nem infere coordenadas; exibe apenas coordenadas presentes no arquivo.
-- O carregamento de arquivos pelo botão é temporário e vale somente para a sessão atual.
+- O mapa exibe apenas coordenadas presentes nos arquivos; não geocodifica endereços.
+- Arquivos carregados pela interface ficam apenas na sessão atual e não são enviados ao repositório.
